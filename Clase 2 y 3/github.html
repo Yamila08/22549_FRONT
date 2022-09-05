@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Como subir las cosas del repo local al repo de GIT?</h1>
+        <p> Una vez que hicimos un trabajo en el repo local, lo que debemos hacer es:
+            <ol>
+                <li>"ctrl+s" de guardado local</li>
+                <li>Cerramos el browser</li>
+                <li>Abrimos una terminal</li>
+                <li>Usamos <b>"git status"</b> para ver el estado de las mdificaciones y archivos nuevos que hayaos creado.</li>
+                <li>Usamos <b>"git add ."</b> para agregar esos archivos</li>
+
+            </ol>
+            </p>
+        <p>Ahora, creamos una rama para subir ese documento al servidor, ya que queremos hacer una brunch(rama) por cada clase. Las ramas son una bifurcacion del "Main", con el que queremos agregar por ejemplo, ciertas funcionalidades a un sitio.En este caso, hacemos una rama de cada clase: 
+         <ol>
+            <li>Escribimos en la terminal el comando para generar una nueva rama: <b>git checkout -b feature/(en este caso)clase3_html</b></li>
+            <li>La terminal muestra el mensaje en el que notifica que ha creado una rama "Switched to a new branch "feature/clase3_html": significa que Git salto del Main a feature/clase3_html, rama en el que el contenido difiere de un lugar a otro.</li>
+            <li>Ahora necesitamos subir esa rama nueva al repositorio de GitHub: ya tenemos el codigo local, tenemos localmente una rama nueva y necesitamos que esto suba al repositorio central donde tenemos todo, que es en este caso GitHub.</li>
+            <li>Hacemos "git status"</li>
+            <li>En verde nos aparecera una lista de los archivos que hayamos creado y que necesitemos subir</li>
+            <li> Hacemos <b>git comit -m"clase 3: Etiquetas basicas</b></li>
+            <li>Hacemos Git status para ver el estado de las cosas</li>
+            <li>Ponemos nuevamente <b>git comit -m"clase 3: Etiquetas basicas</b></li>
+            <li>Nos va a saltar la notficacion de que los cambios fueron gusrdados en la nueva rama</li>
+            <li>Hacemos un nuevo git status: nos dira que ya localmente no hay mas nada para subir, como si el paquetito ya estubiera completo para poder enviarse.</li>
+            <li>Hacemos <b>git push</b> pero como es una nueva rama debemos dar la orden de que suba al remoto con "x" nombre al origen.</li>
+            <li>Nos va a saltar una nueva notificacion y deberemos copiar la parte que dice "git push --set-upstream origin+ (el nombre del repo local asociado). Se hace cuando creamos una rama local y queremos PUSHEAR al remoto.</li>
+            <li>Hacemos entonces "git push --set-upstream origin+ (nombre de nueva branch)"+ enter: esto sube los cambios al repositorio remoto de Git.</li>
+            <li> Para verificar que esté la nueva brunch creada, ir a GitHub y chequear bajo el menu del Main.</li>
+        
+         </ol> 
+        </p>
+
+
+    </body>
+</html>
