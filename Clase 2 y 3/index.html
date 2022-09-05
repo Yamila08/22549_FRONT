@@ -1,0 +1,117 @@
+<!--con esto le digo al servidor es que esto es un doc HTML 5--> <!--esta entrada es un comentario :)-->
+<!DOCTYPE html>
+<!--pongo una etiqueta abierta, es un tipo de etiquetas que tienen "abierto y cerrado"-->
+<html> 
+<head>
+    <!--primera parte del documento html, lo "ve" el navegador, pero no lo "dibuja en la pantalla"-->
+    <!--puedo poner un titulo que va a aparecer en el nombre de la pag en vez del DNS(un numero que es la direccion)-->
+    <title>Codo a codo Clase 3</title>
+    <!-- entre las etiquetas abiertas hay contenido. Ese contenido se mostrara de acuerdo a la caracteristica de la etiqueta-->
+    <!--para guardar los cambios: ctrl+s-->
+    <!-- en "Terminal" nos figura: Five Server running at:
+                                              > Network:  http://192.168.1.25:5555
+                                             > Local:    http://localhost:5555(esta es la direccion para ver el contenido que muestra el browser del servidor local)-->
+</head>
+<!--esto es la etiqueta de cierre-->
+<body>
+    <!-- lo que va a mostrar el browser: lo ve y lo dibuja-->
+    <h1>Titulo principal de la pagina</h1>
+    <!--etiquetas básicas-->
+    <h2>Sub titulo de 2do nivel</h2>
+    <h3>Sub titulo de 3do nivel</h3>
+    <h4>Sub titulo de 4do nivel</h4>
+    <h5>Sub titulo de 5do nivel</h5>
+    <h6>Sub titulo de 6do nivel</h6>
+
+    <!--parrafo-->
+    <p>Aca tengo un parrafo, mi primer párrafo! (aunque ya habia hecho otros jaja). Comenzamos a probar.</p>
+
+    <!-- hacer hipervinculos-->
+    <a href="https://www.google.com">
+        Ir a Google
+    </a>
+<!-- cuando sumamos atributos a una misma etiqueta esta bueno, pr una cuestion de buena practica, hacerlo en resnglones/lineas diferentes, para que haya prolijidad y en caso de error, encontarlo-->
+<p>Que pasa cuando queremos hacer un hipervinculo con otro documento html que hayamos creado?. Vamos a hacer lo siguiente:
+    <br>
+    <ul>
+        <li>Abrimos etiqueta "a href="..." "" pero vamos a colocar dentro de las comillas la direccion del documento dentro de nustros archivos html</li>
+        <li>Para facilitar la busqueda del archivo, apretamos "ctrl+barra espaciadora" y nos salen los archivos recientes</li>
+        <li>Seleccionamos el archivo</li>
+        <li>No nos tenemos que olvidar de cerrar la etiqueta "/a" </li> 
+    </ul>
+</p>
+<p>Como resultado tenemos un hipervinculo como el siguiente:
+</p>
+<a href="about.html">
+    Link a documento "about.html"
+</a>
+<p>Ahora bien, hay tipos de documento que en la paguina se nos va a presentar <b>en bloque</b>,como es el caso de lo que contienen las etiquetas "h1", que ocupan todo el espacio disponible,y hay otros que se van a alinear <b>en linea</b>, uno al lado del otro,como por ejemplo en este caso:
+<br>
+<a href="https://www.google.com"> Link a Google
+</a>
+<a href="about.html">Otro Link pero a doc "about.html</a>
+</p>
+<p>Como hacemos para que no aparezcan en linea? Hacemos un <i>salto de linea</i>. Para eso se usa una etiqueta vacia que se llama "br". No se va a ver este documento lo que voy a hacer, pero voy a escribir un comando que ordene al browser ordenrme las cosas como yo quiero en 3...2...1...</p>
+<a href="https://www.google.com"> Link a Google
+</a>
+<br>
+<a href="about.html">Otro Link pero a doc "about.html    
+</a>
+<p>Like Magic! jajaja</p>
+<p>Seguimos con las etiquetas: hay un tipo de etiquetas que permiten hacer <b>listas ordenadas</b>. Para hacer eso escribimos:
+<ol>
+    <li>La etiqueta "ol" que significa "order list": el browser me ordena una lista de forma numerada</li>
+    <li>Dentro de esta etiqueta incluimos "li" que sigfica "list item". Tambien es una etiqueta de contenido asi que hay que recordar cerrarla.</li>
+</ol>
+<b>NOTA:</b>Para hacer esta lista se usaron estas etiquetas :)
+</p>
+<p>Que pasa si queremos hacer una lista pero esta vez NO numerada?
+    <br>
+    Utilizamos:
+    <ul>
+        <li>La etiqueta "ul" que es una etiqueta de contenido.</li>
+        <li>  Dentro de esta etiqueta ponemos: "li" (list item).</li>
+    </ul>
+Y listo! tenemos una lista que se muestra con puntitos :)
+</p>
+<p> Podemos poner en una lista distintos hipervinculos?
+    <br>
+    La respuesta no te sorprenderá: <b>y es que SÍ</b> jaja 
+    <br>
+    Seguimos los mismos pasos para hacer una lista pero inluimos dentro de las etiquetas "li" las etiquetas de hipervinculo que vimos antes: "a href="..." ", y nos queda de la siguiente manera:
+    <ol>
+        <li><a href="about.html">Link a about.html</a></li>
+        <li>
+            <a href="https://www.google.com"> Link a Google
+        </a>
+        </li>
+    </ol> 
+    Y listo :3
+</p>
+<!--etiquetas basicas-->
+<p>Hay tambien <b>etiquetas basicas</b> que son de <b>estilo</b>. IMPORTANTE es recordar que el browser asigna ciertos estilos por defecto. Ya las estuve utlizando a lo largo del documento, pero vamos a repasar:
+    <ul>
+        <li><b>"b"</b> nos pone un texto en <b>negrita</b></li>
+        <li><i>"i"</i>nos pone un texto en <i>italica.</i></li>
+        <li><mark>"mark"</mark>para remarcar.</li>
+        <li><ins>"ins"</ins>subrayado</li>
+        <li><small>"small"</small>texto mas chiquito.</li>
+        <li><del>"del"</del> tachado</li>
+        <li><sup>sup"</sup> para superindice</li>
+        <li><strong>"strong"</strong> para indicar al browser que es una palabra importante. Se marca en negrita, pero la importancia de la etiqueta esta principalmente en que estas palabras se van a ubicar como de importancia en las busquedas de un motor de busquedas reacionadas.</li>
+        <li><sub>"sub"</sub> para un subindice que puede tener un hipervinculo:
+        <br>
+    <sub>
+        <a href="about.html">
+        about.index </a>
+    </sub>
+</li>
+    </ul>
+</p>
+<!--formularios-->
+<p>Para hacer un <b>formulario:</b>
+    <br>
+    <a href="formulario.html"> FORMULARIOS</a>
+</p>
+</body>
+</html>
