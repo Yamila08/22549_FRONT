@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+<body>
+    <h1>Formularios</h1>
+    <p>Cómo hacemos un fromulario?
+        <br>
+        Vamos a utilizar la etiqueta <b>"form":</b>
+            <ol>
+                <li>"form" es una etiqueta contenedora, asi que la abrimos</li>
+                <li>Dentro de "form" escribimos otra etiqueta:" label" (tambien es contenedora) y escribimos por ejemplo "Nombre".Cerramos "label".</li>
+                <li>Escribimos una nueva etiqueta llamada "input" que nos permite abrir un cuadro.</li>
+                <li>Dentro de "input" es necesario agregar Atributos como por ejemplo el atributo <i>" type="text" "</i> que nos permite escribir texto en el recuadro, por ejemplo vamos a llenarlo con el nombre "Light" (es el formilario para la inscripcion a la uni de Light Yagami).</li>
+                <li>Podems tambien configurar la cantidad de items que pueden escribirse dentro con el atributo "maxlength="(una cifra x) 6" ", que quiere decir que podemos escribir 6 caracteres.</li>
+
+            </ol>
+    </p>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" 
+        maxlength="6">
+        <br>
+        <label>Apellido</label>
+        <input type="text" maxlength="6">
+    </form>
+    <p>Para agregar dentro del formulario el cuadro para la contraseña, escribimos:
+        <ul>
+            <li> "label" Password "/label" (con esto describimos al usuario qué hacer en ese recuadro).</li>
+            <li>"input type="<i>password</i>", al que indicamos que la contraseña salga en puntitos.</li>
+            <li>Agregamos despues la etiqueta "input type="<i>submit</i> más el atributo "value="Enviar"para tener un boton de Envio.</li>
+        </ul>
+        Y probamos cómo queda:
+    </p>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" 
+        maxlength="6">
+        <br>
+        <label>Apellido</label>
+        <input type="text" 
+        maxlength="6">
+        <br>
+        <label>Password</label>
+        <input type="password" 
+        maxlength="6">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p> Nota de color: se puede agregar el atributo <b>"size="(numero x)" para que el recuadro tenga un tamaño determinado.</b></p>
+    <h2>Otro tipo de formulario: Check box"</h2>
+    <p>Podemos hacer un tipo de formulario tipo "check box":
+        <ul>
+            <li>Decidimos el tema del formulario y lo escribimos. Por ejemplo: "Cuales son tus hobbies?"</li>
+            <li>Usamos "label"+un texto x + "/label", por ejemplo "musica"</li>
+            <li>Usamos "input type="check box" value="musica"</li>
+            <li>Podemos repetir lo mismo para otras opciones como "series","pelis",etc.</li>
+        </ul>
+        Hacemos un ejemplo:
+        <form>
+            Cuáles son tus hobbies?
+            <br>
+            <label>Musica</label>
+            <input type="checkbox" value="musica">
+            <label>Series</label>
+            <input type="checkbox" value="Series">   
+        </form>
+    </p>
+    <p>Tambien podemos hacer un Check box donde solo se pueda seleccionar UNA de las opciones.
+        <ul>
+            <li>Elegimos un tema: "Sos un fantico de GOT?"</li>
+            <li>"label"+ la opcion, este caso "si" + "/label"</li>
+            <li>"input type="<b>radio</b>" (este es un nuevo atributo), value="si", name="opciones(el name tiene que ser el mismo en las dos opciones para que solo sea posible seleccionar UNA opcion, equivalente a "o" (si o no)".</li>
+            <li>Repetimos estos pasos para hacer la segunda opcion con "value="no". </li>        
+        </ul>
+        Nos queda algo así:
+        <br>
+        <form>
+            Sos un fanatico de GOT?
+            <br>
+            <label>Sí</label>
+            <input type="radio"
+             value="si"
+             name="opcion">
+            <label>No</label>
+            <input type="radio"
+              value="No"
+              name="opcion"> 
+        </form>
+
+    </p>
+
+
+</body>
