@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--aca se configuran elementos de Metadata que afectaran a todo el doc.-->
+        <meta charset="UTF-8">
+        <meta http-equiv= "X-UA-Comatible" 
+            content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial scale=1">    
+        <title>Clase 5</title>
+    </head>
+    <body>
+        <!--estructura basica de un doc HTML5-->
+        <header>
+        <!--contiene los marcados como el logo, se usa siempre dento del body-->
+        <h1>El Titulo mas importante: HTML5</h1>
+        <H2>Explicacion de la estructura basica de una pagina</H2>
+        </header>
+        <main>
+            <h1>Datos de formulario</h1>
+             <!--vamos a hacer un registro de formulario:como viajan los datos de un lado front a otro?-->
+    <!--usamos etiqueta form+ atributo "action ="..""-->
+    <form action="registrar_formulario.html"
+    metod="get">
+  <label>Nombre:</label>
+  <input type="text" 
+  maxlength="6">
+  <br>
+  <label>Apellido</label>
+  <input type="text" 
+  maxlength="6">
+  <br>
+  <label>Password</label>
+  <input type="password" 
+  maxlength="6">
+  <br>
+  <input type="submit" value="Enviar">
+</form>
+
+        </main>
+        <nav>
+            <p>
+                Etiqueta "nav" :Contiene la seccion navegable en el sitio. Representa una seccion de una pág. que conecta a otras páginas o ciertas secciones dentro de la página, por ejemplo una seccion de hipervinculos de navegacion.
+                <br>
+                Es solo para bloques grandes de hipervinculo de navegacion. Ej:
+                <ul>
+                    <li><a href= "index.html"> Index</a></li>
+                    <li><a href= "formulario.html"> Formulario</a></li>
+                    <li><a href= "github.html"> github</a></li>
+                </ul>
+
+            </p>
+
+        </nav>
+        <article> Contenido pincipal de la pagina web</article>
+        <section> Seccion dividida del contenido principal</section>
+        <section>
+            <h2>Tablas</h2>
+            <p>Para hacer tablas vamos a usasr etiquetas "table" contenedora de:
+                <ul>
+                    <li>"tr" y "/tr"</li>
+                    <li>"th" que contiene contenido del head de las columnas</li>
+                    <li>"td" para las filas y su contenido</li>
+                </ul>
+            </p>
+            <table border="2">
+                <!-- podemos agregar atributo "border" para agregar un borde a a tabla-->
+                <tr>
+                    <th>columna 1</th>
+                    <th>columna 2</th>
+                    <th>columna 3</th>
+                </tr>
+                <!--filas-->
+                <tr>
+                    <td>columna 1 fila 1</td>
+                    <td>columna 2 fila 1</td>
+                    <td>columna 3 fila 1</td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+                <!--se copia esa secuencia las veces que sean necesarias-->
+                <tr>
+                    <td colspan="3">columna 1 fila 3 ocupa 3 espacios</td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2">columna 1 fila 3 ocupa 3 espacios</td>
+                    <td>columna 3 ocupa 1 espacio</td>
+                    
+                </tr>
+
+
+            </table>
+        </section>
+        <section>
+            <h2>Ver videos</h2>
+            <p> 
+                ir al <a href="video.html">Video</a>
+
+            </p>
+            <p>
+                En el reproductor de Youtube podemos configurar algunas cosas que son propias de opciones disponibles de Google.
+            </p>
+
+        </section>
+        <section>
+            <h2>Imagenes</h2>
+            <img src="https://imagenes.elpais.com/resizer/EL70gbJpew8S1LX26VnuikTEEL8=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/CKJODPGW4OA2KDYDF6SSLHZIJE.jpg"
+                width="150"
+                heigth="auto">
+            <!--para darle un tamaño a la imagen debemos marcar atributos-->
+
+        
+        </section>
+
+        <aside> Contien info extra o contenido relacionado o links</aside>
+        <footer> El footer: Muestra Info sobre derechos de autor, politica de privacidad, terminos de uso, etc.; es una secion localizada en la parte INFERIOR de una pagina web.</footer>
+    </body>
+</html>
