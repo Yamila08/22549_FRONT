@@ -38,9 +38,26 @@
                 <li>Vemos si modificamos algo mas,  hacemos <b>git add .</b></li>
                 <li>Luego informamos el cambio con <b>git commit -m"(comentario)"</b>, en este caso por ejemplo voy a usar "cambio para mostrar pull request"</li>
                 <li>y hacemos <b>git push</b>, NO estamos creando una nueva rama en este caso, sólo agregando cambios a una rama preexistente</li>
+                <li>Nos va a saltar un listado de informacion de lo que se acaba de hacer, entre ellas informar el sitio el repositorio al que se sumaron los cambios en remoto.</li>
+                <li>Hacemos ctrl+click derecho sobre direccion de git hub que aparece como "to: direccion http". Se abre browser.</li>
+                <li>En git hub: vamos a hacer <b>pull request:</b> nos a aparece una ventana donde esta la rama con los cambios que queremos adicioar al main.</li>
+                <li>Si queremos hacemos un comentario.</li>
+                <li>Pull request + confirmamos el <b>marge</b>, que suma las modificaciones al Main.</li>
+                <li>Ahi terminamos en el remoto</li>
             </ol>
         </p>
-        <p></p>
+        <p>Puede ser que abramos de nuevo una rama en el visual(local). En la terminal deberemos:
+            <ul>
+                <li><b>git checkout main</b>: abrimos l rama principal</li>
+                <li>Hacer <b>git pull</b>: trae los cambios hechos en remoto a local.</li>
+                <li>vamos a la rama en la queremos trabajar: <b>git checkout +tab (permite buscar entre ramas)+enter</b></li>
+
+            </ul>
+
+        </p>
+        <p>
+            Si no nos abriera los archivos de las otras ramas para poder trabajar podemos traer todo lo que se esta haciendo en el main a la rama en la que estamos queriendo trabajar. El comando es <b>git pull origin main</b>: nos trae todo lo que esta en remoto a la rama en la que estamos trabajando
+        </p>
 
 
     </body>
