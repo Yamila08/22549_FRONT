@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="STYLESHEET" href="hoja de estilo.css">
+        <title>Empezando CSS</title>
+</head>
+<body>
+    <h1>Clase 6: Empezando CSS</h1>
+    <h2>Introduccion a Css</h2>
+    <p>CSS es el segundo lenguaje más básico y esencial para crear páginas web.</p>
+    
+    <ol>
+
+        <li>El primero sería HTML, con el que se define el contenido de la página.</li>
+        <li>El segundo CSS, con el que se define la parte de la presentación, es decir, cómo deben
+            mostrarse los elementos de la página, su posición, forma, espaciados, colores y en resumen,
+            toda la parte estética.</li>
+    </ol>
+    <p>CSS es un lenguaje que consiste en una serie de elementos mediante los cuales se declaran los
+        estilos, básicamente éstos son los más importantes:</p>
+        <ul>
+            <li><b>Selectores</b> mediante los cuales podemos especificar qué elementos de la página nos estamos
+                refiriendo</li>
+            <li><b>Atributos de estilo</b>para definir qué cosas queremos estilizar sobre los selectores indicados</li>
+            <li><b>Una serie de valores</b>, que indican qué estilo se debe aplicar a cada atributo sobre cada selector. Los valores se expresan mediante <i>unidades CSS</i> que sirven para cuantificar los valores:pixeles, etc.</li>
+        </ul>
+    <h2>Usos de las CSS</h2>
+    <h3>Etiqueta "span"</h3>
+    <p>Para definir estilos en secciones reducidas de una página se puede utilizar el atributo style en la
+        etiqueta sobre la que queremos aplicar estilos.
+    </p>
+    <p>
+        Esto es un párrafo en varias palabras <span style="color:green">en color verde</span>. Resulta muy
+        fácil.
+    </p>
+    <p>
+        Esto es otro párrafo ahora con palabras <span style="color:blueviolet">en color rojo</span>.
+    </p>
+    <p>
+        Para lograr esto usamos "span style="color: (nombre del color)"" que posee un cierre "/span", y listo!
+
+    </p>
+<h2>Estilos</h2>
+<h3>Estilo definido para una etiqueta</h3>
+<p>
+    Este uso de las CSS podríamos decir que es en realidad el mismo que el anterior. Solo que la etiqueta es de <i>bloque</i> y no una etiqueta <i>inline(en linea)</i> como "span".
+</p>
+<p style="color:#990000">
+    Esto es un párrafo de color rojo.
+</p>
+<p style="color:#000099">
+    Esto es un párrafo de color azul.
+</p>
+<h3 style="color:blueviolet">Estilo definido en una parte de la página.</h3>
+<p>Con la etiqueta <b>"div"</b> podemos definir secciones de una página y aplicarle estilos con el atributo
+    style, es decir, podemos definir estilos de una vez a todo un bloque de la página.
+    <br>
+    El uso de la etiqueta div es englobar partes de un documento HTML para que podamos aplicar
+    estilos a todo el grupo de etiquetas, como el posicionamiento, color, borde, tamaño de letra…
+</p>
+<div style="color:#000099; font-weight:bold">
+    <h3>Estas etiquetas van en <i>azul y negrita</i></h3>
+    <p>
+    Seguimos dentro del DIV, luego permanecen los etilos
+    </p>
+</div>
+<h3>Estilo definido para toda una página</h3>
+<p>Podemos definir, en la cabecera del documento, estilos para que sean aplicados a toda la página. Es
+    una manera muy cómoda de darle forma al documento y muy potente, ya que estos estilos serán
+    seguidos en toda la página y nos ahorraremos así, generar mayor cantidad de etiquetas HTML
+    colocando el atributo style.
+    <br>
+    Es común que los estilos declarados se quieran aplicar a distintas etiquetas dentro del mismo
+    documento.
+    <br>
+    La aplicación de estilos para toda la página, se utiliza para escribir los estilos una vez y usarlos en
+    un número indefinido de etiquetas.
+</p>
+<a href="estilo definido para una pagina.html">Un ejemplo en el link. 
+</a>
+<h3 style="color:blue">Estilo definido para todo un sitio web</h3>
+<p>Una de las características más potentes del desarrollo con <b>hojas de estilos</b> es la posibilidad de
+    definir los estilos de todo un sitio web en una única declaración.
+</p>
+<h2>Incluir estilos con un fichero externo.</h2>
+<ol>
+    <li>Incluir estilos con un fichero externo.</li>
+    <li>Enlazamos la página web con la hoja de estilos. Lo hacemos en el "head" de esta forma:(1) vamos a colocar la etiqueta "link" con los atributos siguientes:
+        <b>rel="STYLESHEET"</b> indicando que el enlace es con una hoja de estilos y 
+        <b>href="(nombre del archivo a enlazarcon extencion css"</b>indica el nombre del fichero fuente de los estilos
+    </li>
+
+</ol>
+<H2>Reglas de importancia en los estilos</H2>
+<p>Los estilos se heredan de una etiqueta a otra, como se indicó anteriormente. Por ejemplo, si tenemos
+    declarado en el "BODY" unos estilos, en muchos casos, estas declaraciones también afectarán a
+    etiquetas que estén dentro de esta etiqueta.
+</p>
+<ul>
+    <li>La herencia puede depender del estilo utilizado</li>
+    <li>O puede depender de la jerarquia siendo:</li>
+</ul>
+<ol>
+    <li>La menos respetada pero mas general, <b>Declaración de estilos con fichero externo </b>(para todo un sitio web)</li>
+    <li>Luego <b>Declaración de estilos para toda la página.</b> (Con la etiqueta "STYLE" en la cabecera de la página)</li>
+    <li>Por ultimo, mas respetada pero menos general y especifica los <b>Definidos en una etiqueta en concreto. </b> (Utilizando el atributo style en la etiqueta en cuestión)</li>
+</ol>
+<h2 style="color:aqua">Medición y Unidades en CSS</h2>
+
+
+</body>
+</html>
